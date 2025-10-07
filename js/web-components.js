@@ -17,4 +17,20 @@ class MainHeader extends HTMLElement {
   }
 }
 
+class AppButton extends HTMLElement {
+  connectedCallback() {
+    // Variant: primary | secondary
+    const variant = this.dataset.variant || 'primary'
+
+    this.innerHTML = `
+<button class="app-button ${variant}">
+  <span>
+    ${this.innerHTML}
+  </span>
+</button>
+`
+  }
+}
+
 window.customElements.define('main-header', MainHeader)
+window.customElements.define('app-button', AppButton)
