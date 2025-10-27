@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O Que Fazer?</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Phosphor Icons -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/fill/style.css"
+    />
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Scripts JS -->
+    <script
+      type="module"
+      defer
+      src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"
+    ></script>
+    <script defer src="js/web-components.js"></script>
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <main-header></main-header>
+
+    <main class="home-main">
+      <section class="home__hero-container">
+        <div class="home__hero container">
+          <div class="hero__heading-wrapper">
+            <span>Queimadas - PB</span>
+            <h1 class="hero__heading">o que fazer?</h1>
+          </div>
+        </div>
+
+        <!-- Cards -->
+        <div class="o_que_fazer_cards">
+
+            <!-- Card 1 -->
+            <div class="card" style="width: 18rem;" data-title="Rapel"
+                data-image-src="/turismo-de-queimadas/assets/rapel.jpg"
+                data-full-text="O rapel é uma técnica de descida controlada por cordas, utilizada para acessar 
+                locais íngremes ou de difícil acesso, como paredões, montanhas, cavernas e cachoeiras.  
+                A prática consiste em deslizar por uma corda fixada em um ponto seguro, usando equipamentos  
+                como cadeirinha, mosquetões, freio e capacete. Além de ser um esporte de aventura que  
+                proporciona adrenalina e contato com a natureza, o rapel também é usado em resgates, escaladas 
+                e treinamentos militares.">
+                <img src="/turismo-de-queimadas/assets/rapel.jpg" class="card-img-top" alt="rapel">
+                <div class="card-body">
+                    <h3 class="card-title">Rapel</h3>
+                    <p class="card-text">Clique para saber mais!</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card" style="width: 18rem;" data-title="Rapel na Pedra"
+                data-image-src="/turismo-de-queimadas/assets/rapel.jpg"
+                data-full-text="O rapel é uma técnica de descida controlada por cordas, utilizada para acessar 
+                locais íngremes ou de difícil acesso, como paredões, montanhas, cavernas e cachoeiras.  
+                A prática consiste em deslizar por uma corda fixada em um ponto seguro, usando equipamentos  
+                como cadeirinha, mosquetões, freio e capacete. Além de ser um esporte de aventura que  
+                proporciona adrenalina e contato com a natureza, o rapel também é usado em resgates, escaladas 
+                e treinamentos militares.">
+                <img src="/turismo-de-queimadas/assets/rapel.jpg" class="card-img-top" alt="rapel">
+                <div class="card-body">
+                    <h5 class="card-title">Rapel teste</h5>
+                    <p class="card-text">Rapel paragrafo</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card" style="width: 18rem;" data-title="Rapel na Pedra"
+                data-image-src="/turismo-de-queimadas/assets/rapel.jpg"
+                data-full-text="O rapel é uma técnica de descida controlada por cordas, utilizada para acessar 
+                locais íngremes ou de difícil acesso, como paredões, montanhas, cavernas e cachoeiras.  
+                A prática consiste em deslizar por uma corda fixada em um ponto seguro, usando equipamentos  
+                como cadeirinha, mosquetões, freio e capacete. Além de ser um esporte de aventura que  
+                proporciona adrenalina e contato com a natureza, o rapel também é usado em resgates, escaladas 
+                e treinamentos militares.">
+                <img src="/turismo-de-queimadas/assets/rapel.jpg" class="card-img-top" alt="rapel">
+                <div class="card-body">
+                    <h5 class="card-title">Rapel teste</h5>
+                    <p class="card-text">Rapel paragrafo</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    </main>
+
+        <!-- Modal -->
+        <div id="modal-overlay" class="modal-overlay">
+
+        <!-- Conteúdo do Modal -->
+        <div id="modal-content" class="modal-content">
+            <img id="modal-image" src="" alt="Imagem do Ponto Turístico" class="modal-image">
+            <h2 id="modal-title" class="modal-title"></h2>
+            <p id="modal-text" class="modal-text"></p>
+        </div>
+        
+        <!-- Fechar Modal -->
+        <button id="modal-close" class="modal-close">&times;</button>
+        
+        </div>
+  </body>
+</html>
