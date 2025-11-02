@@ -7,7 +7,7 @@ class MainHeader extends HTMLElement {
       <img src="../assets/logo_queimadas_prefeitura.png" width="176" height="54" alt="Logo Prefeitura de Queimadas, Paraíba">
     </a>
     <nav class="header__nav">
-      <a href="../o-que-fazer.html" class="link">O que fazer</a>
+      <a href="o-que-fazer.html" class="link">O que fazer</a>
       <a href="../restaurantes-e-pousadas.html" class="link">Restaurantes e Pousadas</a>
       <a href="#" download class="link">Baixar mapa</a>
     </nav>

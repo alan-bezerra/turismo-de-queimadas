@@ -155,6 +155,7 @@ a {
 .o_que_fazer_cards {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 50px;
   margin: 80px auto 0 auto;
@@ -164,10 +165,21 @@ a {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.card-body {  
+  padding: 1rem;
+}
+
 .card:hover {
   transform: scale(1.05); 
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+}
+
+.card-img-top {
+ width: 100%;
+ height: 200px;
+ object-fit: cover;
+ border-radius: 6px 6px 0 0;
 }
 
 /* Modal Cards */
@@ -247,6 +259,44 @@ a {
   font-size: 1.1rem;
   line-height: 1.6;
   color: var(--color-gray-500);
+}
+
+/* Setas modal imagens */
+.modal-image-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.modal-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  
+  background: rgba(233, 232, 232, 0.4);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  z-index: 10;
+  display: none; 
+}
+
+.modal-arrow:hover {
+  background: rgba(122, 122, 122, 0.7);
+}
+
+.modal-arrow.prev {
+  left: 10px;
+}
+
+.modal-arrow.next {
+  right: 10px;
 }
 
 @keyframes modal-fade-in {

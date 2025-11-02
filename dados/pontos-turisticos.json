@@ -1,0 +1,112 @@
+{
+  "pedra-do-touro": {
+    "titulo": "Pedra do Touro",
+    "imagens": [
+      "assets/pontos-turisticos/pedra-do-touro.jpg",
+      "assets/pontos-turisticos/pedra-do-touro-2.jpg"
+    ],
+    "descricao": [
+      "Situado às margens da rodovia BR-104, em um dos pontos mais elevados da Serra da Bodopitá, o Complexo Arqueológico Pedra do Touro oferece ao visitante uma vista panorâmica privilegiada tanto da zona rural quanto da área urbana de Queimadas, com possibilidade de avistar a cidade vizinha de Campina Grande no horizonte. No topo, o pôr do sol assume protagonismo, tornando-se momento ideal para contemplação e registro fotográfico.",
+
+      "O nome “Pedra do Touro” deriva de uma formação rochosa de grande porte – aproximadamente oito metros de comprimento por três metros de largura – sobre a qual se encontram pinturas rupestres variadas. Por muito tempo acreditou-se que a figura principal se assemelhava a um touro, em função de sua saliência dorsal e aparentes “chifres”. Esse conjunto integra o rico patrimônio arqueológico de Queimadas, que compreende diversos sítios com inscrições rupestres e grafismos pré-históricos.",
+
+      "Além do valor histórico-arqueológico, o local vem se consolidando como destino para turismo de aventura. Trilhas ascendentes que cruzam a vegetação típica da caatinga abrem caminho para a rocha-matacão, e as suas encostas permitem prática de esportes como rapel, proporcionando experiências de alto impacto para aventureiros. Mais recentemente, o local também passou a ser promovido como centro de astroturismo: pesquisadores e entusiastas da astronomia realizaram visita técnica para verificar a viabilidade de observações noturnas no alto da serra, dada a qualidade do horizonte e a baixa poluição luminosa."
+    ]
+  },
+  "serra-do-bodopita": {
+    "titulo": "Serra do Bodopitá",
+    "imagens": [
+      "assets/pontos-turisticos/serra-do-bodopita.jpg",
+      "assets/pontos-turisticos/serra-do-bodopita-2.jpg"
+    ],
+    "descricao": [
+      "Localizada no município de Queimadas, no agreste paraibano, a Serra do Bodopitá é um dos principais patrimônios naturais da região. Situada no Planalto da Borborema, possui altitudes que chegam a 1.200 metros e abriga uma paisagem singular composta por formações rochosas, vegetação típica da caatinga e ampla vista panorâmica que alcança até a cidade de Campina Grande.", 
+
+      "Além de sua beleza natural, a serra possui grande valor histórico e arqueológico, abrigando sítios com pinturas rupestres, como o Complexo Arqueológico Pedra do Touro. O local também é procurado para atividades de turismo ecológico e de aventura, como trilhas, rapel e observação do pôr do sol.",
+
+      "Com rica biodiversidade e potencial para o turismo científico, a Serra do Bodopitá representa um importante símbolo ambiental e cultural de Queimadas, unindo natureza, história e contemplação em um mesmo cenário."
+    ]
+  },
+    "pedra-da-caveira": {
+    "titulo": "Pedra da Caveira",
+    "imagens": [
+      "assets/pontos-turisticos/pedra-da-caveira.jpg"
+    ],
+    "descricao": [
+      "Situada a aproximadamente 6 km do centro de Queimadas, na zona rural do Sítio Gravatá, a Pedra da Caveira apresenta-se como dois blocos rochosos de grande porte unidos por uma fenda estreita, criando uma cavidade natural pela qual os visitantes podem passar para atingir o topo. De longe, a formação remete ao formato de um crânio humano — característica que conferiu o nome pela semelhança visual ao observar-se o perfil da rocha.",
+
+      "O local destaca-se também pela prática de ecoturismo e esportes de aventura, sendo considerado excelente para descidas em rapel e pontos de contemplação ao pôr do sol. A experiência no topo reúne a imponência da paisagem do agreste paraibano e a sensação de verticalidade entre as rochas, ideal para quem busca ali natureza, desafio e contemplação."
+    ]
+  },
+    "pedra-do-cachorro": {
+    "titulo": "Pedra do Cachorro",
+    "imagens": [
+      "assets/pontos-turisticos/pedra-do-cachorro.jpg"
+    ],
+    "descricao": [
+      "A Pedra do Cachorro é uma formação rochosa singular, reconhecida pela sua silhueta que lembra a figura de um cão e funciona como mirante privilegiado da paisagem local. Inserida no contexto rural de Queimadas, ela atrai visitantes interessados tanto em contemplação quanto em fotografia de paisagem e ambientes naturais menos frequentados.",
+
+      "Embora menos explorada em comparação a outros atrativos de rapel, a Pedra do Cachorro oferece um encontro mais tranquilo com a natureza e uma perspectiva diferenciada das formações geológicas que caracterizam o município. Recomenda-se, portanto, para quem deseja vivenciar o ambiente serrano de forma leve, apreciando o cenário sem necessariamente praticar esporte radical."
+    ]
+  },
+    "mercado-publico": {
+    "titulo": "Mercado Público de Queimadas",
+    "imagens": [
+      "assets/pontos-turisticos/mercado-publico-de-queimadas.jpg",
+      "assets/pontos-turisticos/mercado-publico-de-queimadas-2.jpg",
+      "assets/pontos-turisticos/mercado-publico-de-queimadas-3.jpg"
+    ],
+    "descricao": [
+      "Localizado no centro urbano de Queimadas, o Mercado Público é um núcleo vivo da economia local e oferece ao visitante mais do que simples compras: ali se encontra artesanato regional, alimentos frescos, insumos típicos do agreste e interação com o cotidiano da comunidade. O mercado constitui uma parada estratégica para que o turista experimente sabores locais, observe a rotina das feiras e interaja com produtores e comerciantes da região.",
+
+      "Sua visitação permite uma aproximação autêntica com a realidade da cidade, além de compor um roteiro turístico urbano que complementa os atrativos naturais e culturais de Queimadas. É recomendado incluí-lo no início ou no final do dia de visitação para vivenciar a atmosfera local em pleno centro da cidade."
+    ]
+  },
+    "paroquia-nossa-senhora-da-guia": {
+    "titulo": "Paróquia Nossa Senhora da Guia",
+    "imagens": [
+      "assets/pontos-turisticos/paroquia-nossa-senhora-da-guia.jpg",
+      "assets/pontos-turisticos/paroquia-nossa-senhora-da-guia-2.jpg",
+      "assets/pontos-turisticos/paroquia-nossa-senhora-da-guia-3.jpg"
+    ],
+    "descricao": [
+      "A Paróquia Nossa Senhora da Guia, localizada no centro de Queimadas, é a igreja-matriz do município e um marco da fé e da identidade local. Idealizada para atender tanto a zona urbana quanto rural da cidade, a paróquia realiza solenidades de grande significado comunitário, como a tradicional festa da padroeira, que combina celebração religiosa, quermesse e manifestações culturais populares. Além de seu valor estritamente religioso, o templo constitui um importante ponto de visitação para quem deseja conhecer o patrimônio arquitetônico e espiritual de Queimadas. A tranquilidade de suas missas, o acolhimento dos fiéis e o entorno da igreja tornam-no um local apropriado para reflexão, descanso e imersão na cultura local."
+    ]
+  },
+    "pedra-dos-tres-reis-magos": {
+    "titulo": "Pedra dos Três Reis Magos",
+    "imagens": [
+      "assets/pontos-turisticos/pedra-dos-tres-reis-magos.jpg"
+    ],
+    "descricao": [
+      "O conjunto denominado Pedra dos Três Reis Magos integra o acervo de afloramentos rochosos que conferem a Queimadas o apelido de “Cidade das Pedras”. Composta por três rochas principais em disposição que sugere uma referência simbólica aos Reis Magos, a formação é indicada para caminhadas leves e observação paisagística, sendo menos técnica que os pontos dedicados ao rapel.",
+
+      "Situada em meio à vegetação do agreste paraibano e acessível por trilhas da zona rural, a Pedra dos Três Reis Magos proporciona ao visitante uma imersão no ambiente natural, aliando o cenário geológico singular ao silêncio típico da caatinga. Ideal para quem busca contemplação, registro fotográfico e conexão com a natureza."
+    ]
+  },
+    "pedra-do-bico": {
+    "titulo": "Pedra do bico",
+    "imagens": [
+      "assets/pontos-turisticos/pedra-do-bico.jpg"
+    ],
+    "descricao": [
+      "Localizada no Sítio Gravatá, cerca de 4,5 km do centro da cidade, a Pedra do Bico eleva-se a aproximadamente 45 metros de altura, apresentando um perfil retilíneo no lado ocidental e acabamento pontiagudo no topo — traços que justificam seu nome e a reputação como um dos melhores pontos para rapel no agreste paraibano. O local oferece, além da atividade de descida, opções de acampamento, tirolesa e trilha, sendo uma excelente alternativa para turismo de aventura ou estadia prolongada em meio à natureza.",
+
+      "A Pedra do Bico destaca-se também por iniciativas de inclusão social no esporte — foi palco de eventos como o Rapel Inclusivo, voltado a pessoas com deficiência visual, demonstrando o compromisso com acessibilidade no turismo de aventura local.  Para quem visita Queimadas, ela representa uma combinação eficiente entre adrenalina, paisagem natural e infraestrutura de apoio regional."
+    ]
+  },
+    "centro-cultural-philus-haus": {
+    "titulo": "Centro Cultural Philus-Haus",
+    "imagens": [
+      "assets/pontos-turisticos/centro-cultural-philus-haus.jpg",
+      "assets/pontos-turisticos/centro-cultural-philus-haus-2.jpg",
+      "assets/pontos-turisticos/centro-cultural-philus-haus-3.jpg",
+      "assets/pontos-turisticos/centro-cultural-philus-haus-4.jpg"
+    ],
+    "descricao": [
+      "Inaugurado em agosto de 2021 e situado na Fazenda Riacho do Meio, zona rural de Queimadas, o Centro Cultural Philus Haus é um espaço dedicado à preservação da memória histórica, ao turismo pedagógico e ao contato com a natureza. O centro reúne a casa memorial e a casa sede, com arquitetura típica de antigas fazendas nordestinas, além de uma capela em estilo renascentista, mobiliário de época e acervo documental que narram a história da região marcada pelos ciclos do algodão, sisal e pecuária.",
+
+      "Voltado a visitas agendadas, o Philus Haus oferece ao visitante uma experiência que vai além da natureza: ali se mergulha em narrativas de trabalho rural, comunidade e transformação socioeconômica do agreste paraibano. O local fortalece o turismo cultural de Queimadas ao integrar patrimônio material, natureza e educação em um único atrativo."
+    ]
+  }
+}
