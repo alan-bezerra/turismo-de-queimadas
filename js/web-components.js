@@ -8,7 +8,7 @@ class MainHeader extends HTMLElement {
     </a>
     <nav class="header__nav">
       <a href="o-que-fazer.html" class="link">O que fazer</a>
-      <a href="../restaurantes-e-pousadas.html" class="link">Restaurantes e Pousadas</a>
+      <a href="restaurantes-e-pousadas.html" class="link">Restaurantes e Pousadas</a>
       <a href="#" download class="link">Baixar mapa</a>
     </nav>
   </div>

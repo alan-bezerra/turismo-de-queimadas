@@ -152,7 +152,7 @@ a {
 /* Página "O que fazer?" */
 
 /* Cards */
-.o_que_fazer_cards {
+.cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -211,12 +211,16 @@ a {
   border-radius: 8px;
   padding: 24px;
   position: relative;
-  max-width: 800px;
+  max-width: 1000px;
   width: 100%;
   max-height: 90vh;
   overflow-y: auto;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   animation: modal-scale-up 0.3s ease;
+}
+
+body.modal-aberto {
+  overflow: hidden;
 }
 
 .modal-close {
@@ -259,6 +263,15 @@ a {
   font-size: 1.1rem;
   line-height: 1.6;
   color: var(--color-gray-500);
+  text-align: justify;
+}
+
+.modal-text p {
+  margin-bottom: 1.25rem;
+}
+
+.modal-text p:last-child {
+  margin-bottom: 0;
 }
 
 /* Setas modal imagens */
