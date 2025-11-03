@@ -272,3 +272,182 @@ a {
   font-family: 'Inter', sans-serif;
   text-transform: uppercase;
 }
+
+/* Página "O que fazer?" */
+
+/* Cards */
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin: 80px auto 0 auto;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-body {  
+  padding: 1rem;
+}
+
+.card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.card-img-top {
+ width: 100%;
+ height: 200px;
+ object-fit: cover;
+ border-radius: 6px 6px 0 0;
+}
+
+/* Modal Cards */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  display: none; 
+  z-index: 1000;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.modal-overlay.active {
+  display: flex;
+  animation: modal-fade-in 0.3s ease;
+}
+
+/* Conteúdo do Modal */
+.modal-content {
+  background: var(--color-white);
+  border-radius: 8px;
+  padding: 24px;
+  position: relative;
+  max-width: 1000px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: modal-scale-up 0.3s ease;
+}
+
+body.modal-aberto {
+  overflow: hidden;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  line-height: 1;
+  color: var(--color-white);
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+  z-index: 1001;
+}
+
+.modal-close:hover {
+  color: var(--color-gray-200);
+  transform: scale(1.1);
+}
+
+.modal-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.modal-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-blue-800);
+  margin-bottom: 15px;
+}
+
+.modal-text {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color-gray-500);
+  text-align: justify;
+}
+
+.modal-text p {
+  margin-bottom: 1.25rem;
+}
+
+.modal-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* Setas modal imagens */
+.modal-image-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.modal-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  
+  background: rgba(233, 232, 232, 0.4);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  z-index: 10;
+  display: none; 
+}
+
+.modal-arrow:hover {
+  background: rgba(122, 122, 122, 0.7);
+}
+
+.modal-arrow.prev {
+  left: 10px;
+}
+
+.modal-arrow.next {
+  right: 10px;
+}
+
+@keyframes modal-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes modal-scale-up {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

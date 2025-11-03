@@ -1,0 +1,68 @@
+{
+  "pousada-nossa-senhora-da-guia": {
+    "titulo": "Pousada Nossa Senhora da Guia",
+    "imagens": [
+      "assets/restaurantes-e-pousadas/pousada-nossa-senhora-da-guia-1.jpg",
+      "assets/restaurantes-e-pousadas/pousada-nossa-senhora-da-guia-2.png",
+      "assets/restaurantes-e-pousadas/pousada-nossa-senhora-da-guia.png"
+    ],
+    "endereco": "Endereço: Avenida Severino bezerra Cabral, 124 - Queimadas-PB",
+    "contato": "Contato: (83) 9 9671-4228" 
+  },
+    "recanto-das-pedras": {
+    "titulo": "Recanto das Pedras",
+    "imagens": [
+      "assets/restaurantes-e-pousadas/recanto-das-pedras.png",
+      "assets/restaurantes-e-pousadas/recanto-das-pedras-2.png"
+    ],
+    "endereco": "Endereço: R. Assis Chateaubriand, 815, Queimadas - PB",
+    "contato": "Contato: (83) 9 8719-5660" 
+  },
+    "pousada-e-restaurante-da-paz": {
+    "titulo": "Pousada e Restaurante Da Paz",
+    "imagens": [
+      "assets/restaurantes-e-pousadas/pousada-e-restaurante-da-paz.png",
+      "assets/restaurantes-e-pousadas/pousada-e-restaurante-da-paz-2.png"
+    ],
+    "endereco": "Endereço: R. Assis Chateaubriand, 19, Queimadas - PB",
+    "contato": "Contato: (83) 9 9147-2559" 
+  },
+    "tapioca-do-irmao-jairo": {
+    "titulo": "Tapioca do Irmão Jairo",
+    "imagens": [
+      "assets/restaurantes-e-pousadas/tapioca-do-irmao-jairo-1.jpg",
+      "assets/restaurantes-e-pousadas/tapioca-do-irmao-jairo.png",
+      "assets/restaurantes-e-pousadas/tapioca-do-irmao-jairo-2.png"
+    ],
+    "endereco": "Endereço: BR 104 Quilômetro, 37 - Zé Velho, Queimadas - PB",
+    "contato": "Contato: (83) 9 9127-5174" 
+  },
+    "rekints-restaurante-e-churrascaria": {
+    "titulo": "Rekints Restaurante E Churrascaria",
+    "imagens": [
+      "assets/restaurantes-e-pousadas/rekints-restaurante-e-churrascaria.png",
+      "assets/restaurantes-e-pousadas/rekints-restaurante-e-churrascaria-2.png"
+    ],
+    "endereco": "Endereço: R. Severino Tantão, 52A - Centro, Queimadas - PB",
+    "contato": "Contato: (83) 3392-2558" 
+  },
+    "sushi-lom": {
+    "titulo": "Sushi-Lom",
+    "imagens": [
+      "assets/restaurantes-e-pousadas/sushi-lom.jpg"
+    ],
+    "endereco": "Endereço: R. Artur Monteiro - Aníbal Teixeira, Queimadas - PB",
+    "contato": "Contato: (83) 9 9420-0117" 
+  },
+    "restaurante-sabor-nordestino": {
+    "titulo": "Restaurante Sabor Nordestino",
+    "imagens": [
+      "assets/restaurantes-e-pousadas/restaurante-sabor-nordestino.jpg",
+      "assets/restaurantes-e-pousadas/restaurante-sabor-nordestino-2.png",
+      "assets/restaurantes-e-pousadas/restaurante-sabor-nordestino-3.png",
+      "assets/restaurantes-e-pousadas/restaurante-sabor-nordestino-4.png"
+    ],
+    "endereco": "Endereço: R. Assis Chateaubriand, 10 - centro, Queimadas - PB",
+    "contato": "Contato: (83) 9 9152-5666" 
+  }
+}
