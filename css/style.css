@@ -4,6 +4,7 @@
   --color-gray-500: #44464C;
   --color-gray-200: #E0E0E0;
   --color-gray-50: #F5F5F5;
+  --color-gray-25: #FEFDFE;
 
   --color-green-600: #13A239;
 
@@ -59,13 +60,58 @@ a {
 }
 
 .app-button {
+  position: relative;
   all: unset;
-  padding: 28px;
+  padding: 4px;
   border-radius: 9999px;
   cursor: pointer;
+  background-color: var(--color-white);
+  color: var(--color-white);
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  box-shadow:
+    0 13.67px 19px rgba(98, 99, 252, 0.22);
+  transition: all 0.2s ease;
 }
 
-.app-button.primary {}
+.app-button:hover {
+  box-shadow: none;
+  transform: translateY(2px);
+}
+
+.app-button span {
+  display: block;
+  padding: 16px 30px;
+}
+
+.app-button.primary span {
+  border-radius: 9999px;
+  background:
+    /* Top left corner gradient */
+    radial-gradient(circle at 0% 0%, rgba(76, 192, 215, 0.8), transparent 40%),
+    /* Top right corner gradient */
+    radial-gradient(circle at 100% 0%, rgba(73, 143, 179, 0.8), transparent 40%),
+    /* Bottom left corner gradient */
+    radial-gradient(circle at 100% 50%, rgba(0, 147, 229, 0.7), transparent 40%),
+    /* Center to bottom main gradient */
+    linear-gradient(to bottom, #00d4ff, #53e6d8);
+  font-size: 1.5rem;
+}
+
+.app-button.secondary span {
+  border-radius: 9999px;
+  background:
+    /* Top left corner gradient */
+    radial-gradient(circle at 0% 0%, rgba(33, 131, 81, 0.8), transparent 40%),
+    /* Top right corner gradient */
+    radial-gradient(circle at 100% 0%, rgba(33, 131, 81, 0.8), transparent 40%),
+    /* Bottom left corner gradient */
+    radial-gradient(circle at 100% 50%, rgba(19, 162, 57, 0.7), transparent 40%),
+    /* Center to bottom main gradient */
+    linear-gradient(to right, #13A239, #11A079);
+  /* linear-gradient(to bottom, #00d4ff, #53e6d8); */
+  font-size: 1.5rem;
+}
 
 .header {
   background-color: rgba(255, 255, 255, 0.8);
@@ -101,6 +147,84 @@ a {
   display: flex;
   align-items: center;
   gap: 24px;
+}
+
+.footer__container {
+  max-width: calc(1392px + 24px * 2);
+}
+
+.footer__aside {
+  background-color: var(--color-gray-25);
+  border: 1px solid rgba(235, 240, 239, 0.6);
+  padding: 37px 56px;
+  max-width: 1092px;
+  margin: 0 auto;
+  z-index: 10;
+  width: 100%;
+  box-shadow: 0px 5px 10.37px rgba(0, 0, 0, 0.07);
+  border-radius: 18px;
+  transform: translateY(50px);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__aside div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 550px;
+}
+
+.footer__aside div h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 2.375rem;
+  font-weight: 600;
+}
+
+.footer__aside div p {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.375rem;
+  color: #181818;
+}
+
+.footer__aside app-button {
+  max-width: 285px;
+  width: 100%;
+}
+
+.footer__aside app-button .app-button {
+  width: 100%;
+}
+
+.footer__aside .app-button span {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  justify-content: center;
+}
+
+.footer__aside .app-button span i {
+  font-size: 1.5rem;
+}
+
+.footer {
+  background: linear-gradient(90deg, var(--color-blue-800), var(--color-blue-600));
+  border-radius: 16px;
+}
+
+.footer__content {
+  /* Background lines grid */
+  background-image: repeating-linear-gradient(to right,
+      transparent 0 100px,
+      #c9c7cd22 100px 101px),
+    repeating-linear-gradient(to bottom,
+      transparent 0 100px,
+      #c9c7cd22 100px 101px);
+  padding: 112px 64px 54px;
 }
 
 /* Home Page */
