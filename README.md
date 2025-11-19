@@ -4,12 +4,12 @@ Um site interativo e gamificado criado para promover o turismo na cidade de Quei
 
 🕹️ Funcionalidades Principais
 
-🎮 Página "Quiz das Pedras" Gameficada
+🎮 Página "Quiz das Pedras" Gamificada
 
-A página Gameficada oferece uma experiência envolvente, apresentando os principais pontos turísticos de Queimadas-PB de forma moderna e interativa.
+A página gamificada oferece uma experiência envolvente, apresentando os principais pontos turísticos de Queimadas-PB de forma moderna e interativa.
 Nosso jogo é um quiz com perguntas sobre a cidade, onde o visitante testa seus conhecimentos enquanto aprende fatos históricos, curiosidades e informações reais sobre cada local.
 
-Cada pergunta foi criada a partir de conteúdos autênticos sobre região, tornando o aprendizado leve, divertido e educativo — ideal para incentivar o turismo e apresentar a cidade de uma forma dinâmica.
+Cada pergunta foi elaborada a partir de conteúdos autênticos da região, tornando o aprendizado leve, divertido e educativo, ideal para incentivar o turismo e apresentar a cidade de uma forma dinâmica.
 
 📍 Página “O que Fazer?”
 
