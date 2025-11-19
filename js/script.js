@@ -154,3 +154,178 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
  });
 });
+
+/*logica do quiz*/
+
+const questoes = [
+  {
+    questao: "Qual cidade do agreste paraibano é conhecida como “Cidade das Pedras”?",
+    respostas: [
+      { id: 1, texto: "João Pessoa", correta: false },
+      { id: 2, texto: "Queimadas", correta: true },
+      { id: 3, texto: "Campina Grande", correta: false },
+      { id: 4, texto: "Patos", correta: false }
+    ]
+  },
+  {
+    questao: "Qual pedra é conhecida pelas pinturas rupestres no alto da serra?",
+    respostas: [
+      { id: 1, texto: "Pedra do Sol", correta: false },
+      { id: 2, texto: "Pedra da Onça", correta: false },
+      { id: 3, texto: "Pedra do Touro", correta: true },
+      { id: 4, texto: "Pedra das Sombras", correta: false }
+    ]
+  },
+  {
+    questao: "Qual serra de Queimadas é famosa pelas trilhas, altitude e vista panorâmica?",
+    respostas: [
+      { id: 1, texto: "Serra do Bodopitá", correta: true },
+      { id: 2, texto: "Serra do Mulungu", correta: false },
+      { id: 3, texto: "Serra do Araçá", correta: false },
+      { id: 4, texto: "Serra da Gameleira", correta: false }
+    ]
+  },
+  {
+    questao: "Qual formação rochosa lembra um crânio humano quando vista de longe?",
+    respostas: [
+      { id: 1, texto: "Pedra da Lua", correta: false },
+      { id: 2, texto: "Pedra do Olho dÁgua", correta: false },
+      { id: 3, texto: "Pedra do Riacho Seco", correta: false },
+      { id: 4, texto: "Pedra da Caveira", correta: true }
+    ]
+  },
+  {
+    questao: "Qual pedra tem formato semelhante ao de um cão e funciona como mirante?",
+    respostas: [
+      { id: 1, texto: "Pedra da Gruta", correta: false },
+      { id: 2, texto: "Pedra do Cachorro", correta: true },
+      { id: 3, texto: "Pedra do Galo", correta: false },
+      { id: 4, texto: "Pedra do Velho", correta: false }
+    ]
+  },
+  {
+    questao: "Qual local no centro de Queimadas é conhecido por artesanato, feiras e produtos locais?",
+    respostas: [
+      { id: 1, texto: "Estação Cultural", correta: false },
+      { id: 2, texto: "Feira do Sol", correta: false },
+      { id: 3, texto: "Mercado Público", correta: true },
+      { id: 4, texto: "Centro Comercial Serra Azul", correta: false }
+    ]
+  },
+  {
+    questao: "Qual igreja é considerada a matriz de Queimadas e sede da festa da padroeira?",
+    respostas: [
+      { id: 1, texto: "Paróquia Nossa Senhora da Guia", correta: true },
+      { id: 2, texto: "Igreja São Pedro", correta: false },
+      { id: 3, texto: "Paróquia Santa Luzia", correta: false },
+      { id: 4, texto: "Igreja Sagrada Família", correta: false }
+    ]
+  },
+  {
+    questao: "Qual formação rochosa é composta por três pedras e conferem a Queimadas o apelido de “Cidade das Pedras”?",
+    respostas: [
+      { id: 1, texto: "Pedra do Triunfo", correta: false },
+      { id: 2, texto: "Pedra dos Três Irmãos", correta: false },
+      { id: 3, texto: "Pedra dos Profetas", correta: false },
+      { id: 4, texto: "Pedra dos Três Reis Magos", correta: true }
+    ]
+  },
+  {
+    questao: "Qual pedra de Queimadas é famosa pelo topo pontiagudo e pelas práticas de rapel?",
+    respostas: [
+      { id: 1, texto: "Pedra do Vale", correta: false },
+      { id: 2, texto: "Pedra do Bico", correta: true },
+      { id: 3, texto: "Pedra da Serra Alta", correta: false },
+      { id: 4, texto: "Pedra do Mirante Seco", correta: false }
+    ]
+  },
+  {
+    questao: "Qual espaço cultural inaugurado em 2021 preserva a história e a memória rural do município?",
+    respostas: [
+      { id: 1, texto: "Museu Fazenda Nova", correta: false },
+      { id: 2, texto: "Casa Cultural do Agreste", correta: false },
+      { id: 3, texto: "Centro Cultural Philus-Haus", correta: true },
+      { id: 4, texto: "Instituto Memória Serra Azul", correta: false }
+    ]
+  },
+]
+
+const questaoElement = document.getElementById("questao");
+const respostaButtons = document.getElementById("resposta-buttons");
+const proximoButton = document.getElementById("proximo-btn");
+
+let questaoAtualIndex = 0;
+let pontuacao = 0;
+
+function comecarQuiz() {
+  questaoAtualIndex = 0;
+  pontuacao = 0;
+  proximoButton.innerHTML = "Próxima"
+  mostrarQuestao();
+}
+
+function resetState(){
+  proximoButton.style.display = "none";
+  while(respostaButtons.firstChild){
+    respostaButtons.removeChild(respostaButtons.firstChild);
+  }
+}
+
+function mostrarQuestao() {
+  resetState();
+  let questaoAtual = questoes[questaoAtualIndex];
+  let numQuestao = questaoAtualIndex + 1;
+  questaoElement.innerHTML = `${numQuestao}. ${questaoAtual.questao}`;
+
+  questaoAtual.respostas.forEach((resposta) =>{
+    const button = document.createElement("button");
+    button.innerHTML = resposta.texto;
+    button.dataset.id =  resposta.id;
+    button.classList.add("btn");
+    button.addEventListener("click", selecionarResposta);
+    respostaButtons.appendChild(button);
+  });
+}
+
+function selecionarResposta(e){
+  respostas = questoes[questaoAtualIndex].respostas;
+  const respostaCorreta = respostas.filter((resposta) => resposta.correta == true)[0];
+  const btnSelecionado = e.target;
+  const estaCorreto = btnSelecionado.dataset.id == respostaCorreta.id;
+  if(estaCorreto){
+    btnSelecionado.classList.add("correto");
+    pontuacao += 10;
+  }else{
+    btnSelecionado.classList.add("incorreto")
+  };
+  Array.from(respostaButtons.children).forEach((button) => {
+    button.disabled = true
+  });
+  proximoButton.style.display = "block";
+}
+
+function mostrarPontos(){
+  resetState();
+  questaoElement.innerHTML = `Você fez ${pontuacao}/${questoes.length * 10} pontos!`
+  proximoButton.innerHTML = "Jogar Novamente"
+  proximoButton.style.display = "block";
+}
+
+function ativarProximaQuestao(){
+  questaoAtualIndex++;
+  if(questaoAtualIndex < questoes.length){
+    mostrarQuestao();
+  } else {
+    mostrarPontos();
+  }
+}
+
+proximoButton.addEventListener("click", () => {
+  if(questaoAtualIndex < questoes.length){
+    ativarProximaQuestao();
+  }else{
+    comecarQuiz();
+  }
+});
+
+comecarQuiz();

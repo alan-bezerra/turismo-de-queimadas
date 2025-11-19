@@ -452,3 +452,76 @@ body.modal-aberto {
     transform: scale(1);
   }
 }
+
+/* Página "Quiz das pedras" */
+.game{
+  background-color: var(--color-blue-600);
+  width: 90%;
+  max-width: 800px;
+  margin: 100px auto 0;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.game h1 {
+  color: #FFFF;
+  font-weight: 30px;
+  font-weight: 600;
+  border-bottom: 1px  solid #FFFF;
+  padding-bottom: 30px;
+}
+
+.quiz{
+  padding: 20px 0;
+}
+
+.quiz h2{
+  font-size: 23px;
+  color: #FFFF;
+  font-weight: 600;
+}
+
+.btn{
+  background-color: #FFFF;
+  color: #222;
+  font-weight: 500;
+  width: 100%;
+  border: 1px solid #222;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]) {
+  background-color: #222;
+  color: #FFFF;
+}
+
+.btn:disabled{
+  cursor: no-drop;
+}
+
+#proximo-btn{
+  /*display: none;*/
+  background-color: #FFFF;
+  color: var(--color-blue-600);
+  font-weight: 500;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer
+}
+
+.correto{
+  background-color: #9aeabc;
+}
+
+.incorreto{
+  background-color: #ff9393;
+}
