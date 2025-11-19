@@ -482,6 +482,27 @@ body.modal-aberto {
   font-weight: 600;
 }
 
+#resultado-questao{
+  /*display: none;*/
+  font-size: 23px;
+  color: #FFFF;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#resposta-buttons{
+  border-bottom: 1px  solid #FFFF;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+#gabarito{
+  /*display: none;*/
+  font-size: 18px;
+  color: #FFFF;
+  font-weight: 600;
+}
+
 .btn{
   background-color: #FFFF;
   color: #222;
