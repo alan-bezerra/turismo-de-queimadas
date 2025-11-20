@@ -166,7 +166,7 @@ const questoes = [
       { id: 3, texto: "Campina Grande", correta: false },
       { id: 4, texto: "Patos", correta: false }
     ],
-    gabarito: "Queimadas é chamada de “Cidade das Pedras” por suas diversas formações rochosas naturais, como a Pedra do Touro, Pedra da Caveira e outros afloramentos que são marcantes na paisagem local.",
+    gabarito: "Queimadas é chamada de “Cidade das Pedras” por suas diversas formações rochosas naturais e outros afloramentos que são marcantes na paisagem local.",
   },
   {
     questao: "Qual pedra é conhecida pelas pinturas rupestres no alto da serra?",
@@ -176,7 +176,7 @@ const questoes = [
       { id: 3, texto: "Pedra do Touro", correta: true },
       { id: 4, texto: "Pedra das Sombras", correta: false }
     ],
-    gabarito: "A Pedra do Touro é um sítio arqueológico com pinturas rupestres e uma grande rocha que lembra um touro, sendo um dos pontos mais altos da Serra da Bodopitá.",
+    gabarito: "A Pedra do Touro é um sítio arqueológico com pinturas rupestres lembram um touro, sendo um dos pontos mais altos da Serra da Bodopitá.",
   },
   {
     questao: "Qual serra de Queimadas é famosa pelas trilhas, altitude e vista panorâmica?",
@@ -206,7 +206,7 @@ const questoes = [
       { id: 3, texto: "Pedra do Galo", correta: false },
       { id: 4, texto: "Pedra do Velho", correta: false }
     ],
-    gabarito: "A Pedra do Cachorro possui formato que lembra um cão e funciona como mirante natural para fotos e contemplação.",
+    gabarito: "A Pedra do Cachorro possui esse nome justamente pelo formato que lembra um cão e funciona como mirante natural para fotos e contemplação.",
   },
   {
     questao: "Qual local no centro de Queimadas é conhecido por artesanato, feiras e produtos locais?",
@@ -236,7 +236,7 @@ const questoes = [
       { id: 3, texto: "Pedra dos Profetas", correta: false },
       { id: 4, texto: "Pedra dos Três Reis Magos", correta: true }
     ],
-    gabarito: "A Pedra dos Três Reis Magos é formada por três rochas que lembram os Reis Magos e é indicada para caminhadas e contemplação.",
+    gabarito: "A Pedra dos Três Reis Magos é formada por três rochas que sugerem uma referência simbólica aos Reis Magos e é indicada para caminhadas e contemplação.",
   },
   {
     questao: "Qual pedra de Queimadas é famosa pelo topo pontiagudo e pelas práticas de rapel?",
@@ -272,6 +272,9 @@ let pontuacao = 0;
 function comecarQuiz() {
   questaoAtualIndex = 0;
   pontuacao = 0;
+  proximoButton.innerHTML = "Próxima"
+  document.querySelector('.game-intro').style.display = 'none';
+  document.querySelector('.game').style.display = 'block';
   mostrarQuestao();
 }
 
@@ -332,7 +335,7 @@ function selecionarResposta(e){
 function mostrarPontos(){
   resetState();
   questaoElement.innerHTML = `Você fez ${pontuacao}/${questoes.length * 10} pontos!`
-  proximoButton.innerHTML = "Jogar Novamente"
+  proximoButton.innerHTML = "voltar ao início"
   proximoButton.style.display = "block";
 }
 
@@ -349,8 +352,7 @@ proximoButton.addEventListener("click", () => {
   if(questaoAtualIndex < questoes.length){
     ativarProximaQuestao();
   }else{
-    comecarQuiz();
+    document.querySelector('.game-intro').style.display = 'block';
+    document.querySelector('.game').style.display = 'none';
   }
 });
-
-comecarQuiz();
