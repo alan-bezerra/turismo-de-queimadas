@@ -151,6 +151,7 @@ a {
 
 .footer__container {
   max-width: calc(1392px + 24px * 2);
+  padding-bottom: 24px;
 }
 
 .footer__aside {
@@ -160,7 +161,7 @@ a {
   max-width: 1092px;
   margin: 0 auto;
   z-index: 10;
-  width: 100%;
+  width: 90%;
   box-shadow: 0px 5px 10.37px rgba(0, 0, 0, 0.07);
   border-radius: 18px;
   transform: translateY(50px);
@@ -214,6 +215,7 @@ a {
 .footer {
   background: linear-gradient(90deg, var(--color-blue-800), var(--color-blue-600));
   border-radius: 16px;
+  color: var(--color-white);
 }
 
 .footer__content {
@@ -225,7 +227,51 @@ a {
       transparent 0 100px,
       #c9c7cd22 100px 101px);
   padding: 112px 64px 54px;
-  margin-bottom: 20px;
+  display: flex;
+  min-height: 400px;
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 376px;
+  margin-right: 40px;
+}
+
+.footer__social a {
+  font-size: 1.5rem;
+  margin-right: 12px;
+}
+
+.footer__links {
+  flex: 1;
+}
+
+.footer__links .link::after {
+  background: var(--color-white);
+}
+
+.footer__links h5 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.footer__links ul {
+  padding: 0;
+}
+
+.footer__links ul li {
+  padding: 8px 0;
+  font-weight: 500;
+  list-style: none;
+}
+
+.footer__copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 24px 12px;
+  text-align: center;
 }
 
 /* Home Page */
@@ -460,17 +506,17 @@ body.modal-aberto {
 }
 
 /* Página "Quiz das pedras" */
-.game{
+.game {
   display: none;
   background:
-  /* Top left corner gradient */
-  radial-gradient(circle at 0% 0%, rgba(76, 192, 215, 0.8), transparent 40%),
-  /* Top right corner gradient */
-  radial-gradient(circle at 100% 0%, rgba(73, 143, 179, 0.8), transparent 40%),
-  /* Bottom left corner gradient */
-  radial-gradient(circle at 100% 50%, rgba(0, 147, 229, 0.7), transparent 40%),
-  /* Center to bottom main gradient */
-  linear-gradient(to bottom, #00d4ff, #53e6d8);
+    /* Top left corner gradient */
+    radial-gradient(circle at 0% 0%, rgba(76, 192, 215, 0.8), transparent 40%),
+    /* Top right corner gradient */
+    radial-gradient(circle at 100% 0%, rgba(73, 143, 179, 0.8), transparent 40%),
+    /* Bottom left corner gradient */
+    radial-gradient(circle at 100% 50%, rgba(0, 147, 229, 0.7), transparent 40%),
+    /* Center to bottom main gradient */
+    linear-gradient(to bottom, #00d4ff, #53e6d8);
   width: 90%;
   max-width: 800px;
   margin: 100px auto 0;
@@ -485,21 +531,21 @@ body.modal-aberto {
   color: #000;
   font-weight: 30px;
   font-weight: 600;
-  border-bottom: 1px  solid #000;
+  border-bottom: 1px solid #000;
   padding-bottom: 30px;
 }
 
-.quiz{
+.quiz {
   padding: 20px 0;
 }
 
-.quiz h2{
+.quiz h2 {
   font-size: 23px;
   color: #000;
   font-weight: 600;
 }
 
-#resultado-questao{
+#resultado-questao {
   /*display: none;*/
   font-size: 23px;
   color: #000;
@@ -507,20 +553,20 @@ body.modal-aberto {
   margin-bottom: 10px;
 }
 
-#resposta-buttons{
-  border-bottom: 1px  solid #000;
+#resposta-buttons {
+  border-bottom: 1px solid #000;
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
 
-#gabarito{
+#gabarito {
   /*display: none;*/
   font-size: 18px;
   color: #000;
   font-weight: 600;
 }
 
-.btn{
+.btn {
   background-color: #FFFF;
   color: #222;
   font-weight: 500;
@@ -539,14 +585,14 @@ body.modal-aberto {
   background-color: #222;
   color: #FFFF;
   transform: translateY(2px);
-  box-shadow: none; 
+  box-shadow: none;
 }
 
-.btn:disabled{
+.btn:disabled {
   cursor: no-drop;
 }
 
-#proximo-btn{
+#proximo-btn {
   /*display: none;*/
   background-color: #FFFF;
   color: #000;
@@ -563,14 +609,14 @@ body.modal-aberto {
 
 #proximo-btn:hover {
   transform: translateY(1px);
-  box-shadow: none;                       
+  box-shadow: none;
 }
 
-.correto{
+.correto {
   background-color: #9aeabc;
 }
 
-.incorreto{
+.incorreto {
   background-color: #ff9393;
 }
 
@@ -612,14 +658,14 @@ body.modal-aberto {
 }
 
 .intro-description {
-  font-size: 20px;               
-  line-height: 1.6;     
-  font-weight: 600;         
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 600;
   text-align: left;
-  color: #000;                   
-  max-width: 1000px;              
-  margin: 0 auto;   
-  padding: 10px;                    
+  color: #000;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 
@@ -628,32 +674,93 @@ body.modal-aberto {
   font-size: 27px;
   cursor: pointer;
   background:
-  /* Top left corner gradient */
-  radial-gradient(circle at 0% 0%, rgba(76, 192, 215, 0.8), transparent 40%),
-  /* Top right corner gradient */
-  radial-gradient(circle at 100% 0%, rgba(73, 143, 179, 0.8), transparent 40%),
-  /* Bottom left corner gradient */
-  radial-gradient(circle at 100% 50%, rgba(0, 147, 229, 0.7), transparent 40%),
-  /* Center to bottom main gradient */
-  linear-gradient(to bottom, #00d4ff, #53e6d8);        
+    /* Top left corner gradient */
+    radial-gradient(circle at 0% 0%, rgba(76, 192, 215, 0.8), transparent 40%),
+    /* Top right corner gradient */
+    radial-gradient(circle at 100% 0%, rgba(73, 143, 179, 0.8), transparent 40%),
+    /* Bottom left corner gradient */
+    radial-gradient(circle at 100% 50%, rgba(0, 147, 229, 0.7), transparent 40%),
+    /* Center to bottom main gradient */
+    linear-gradient(to bottom, #00d4ff, #53e6d8);
   color: white;
-  border: 4px solid #fff;     
-  border-radius: 50px;        
+  border: 4px solid #fff;
+  border-radius: 50px;
   font-weight: bold;
   display: flex;
   align-items: center;
-  gap: 12px;                  
+  gap: 12px;
   box-shadow: 0 13.67px 19px rgba(98, 99, 252, 0.22);
   transition: transform 0.2s ease, box-shadow 0.15s ease;
   margin: 30px auto 0;
 }
 
 .intro-button::before {
-  content: "▶";  
+  content: "▶";
   font-size: 22px;
 }
 
 .intro-button:hover {
   transform: translateY(2px);
-  box-shadow: none;                       
+  box-shadow: none;
+}
+
+/* Responsividade do Footer */
+@media (max-width: 768px) {
+  .footer__aside {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 37px 24px;
+  }
+
+  .footer__aside div {
+    max-width: 100%;
+  }
+
+  .footer__aside h2 {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .footer__content {
+    flex-direction: column;
+    gap: 32px;
+    /* padding: 64px 54px; */
+  }
+
+  .footer__social {
+    margin-right: 0;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer__content {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .footer__social {
+    margin-right: 20px;
+  }
+
+  .footer__links {
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__content {
+    padding-left: 32px;
+    padding-right: 32px;
+    /* padding: 48px 32px 54px; */
+  }
+
+  .footer__links h5 {
+    font-size: 1rem;
+  }
+
+  .footer__links ul li {
+    font-size: 0.875rem;
+  }
 }
