@@ -3,10 +3,13 @@
 Um site interativo e gamificado criado para promover o turismo na cidade de Queimadas, Paraíba, destacando seus principais pontos turísticos, opções de lazer, gastronomia e hospedagem. O projeto tem como objetivo valorizar o patrimônio natural, histórico e cultural do município, incentivando o turismo sustentável e o desenvolvimento local.
 
 🕹️ Funcionalidades Principais
-🎮 Página Inicial Gamificada
 
-A página inicial oferece uma experiência imersiva, onde o visitante pode caminhar virtualmente pela cidade e descobrir os pontos turísticos interagindo com o cenário.
-Cada ponto explorado revela informações, imagens reais e curiosidades sobre o local.
+🎮 Página "Quiz das Pedras" Gamificada
+
+A página gamificada oferece uma experiência envolvente, apresentando os principais pontos turísticos de Queimadas-PB de forma moderna e interativa.
+Nosso jogo é um quiz com perguntas sobre a cidade, onde o visitante testa seus conhecimentos enquanto aprende fatos históricos, curiosidades e informações reais sobre cada local.
+
+Cada pergunta foi elaborada a partir de conteúdos autênticos da região, tornando o aprendizado leve, divertido e educativo, ideal para incentivar o turismo e apresentar a cidade de uma forma dinâmica.
 
 📍 Página “O que Fazer?”
 

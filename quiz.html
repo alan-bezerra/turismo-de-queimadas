@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz das pedras</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Phosphor Icons -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/fill/style.css"
+    />
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Scripts JS -->
+    <script
+      type="module"
+      defer
+      src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"
+    ></script>
+    <script defer src="js/web-components.js"></script>
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <main-header></main-header>
+
+    <main class="home-main">
+      <section class="home__hero-container">
+        <div class="game-intro">
+          <div class="intro-content">
+            <div class="intro-image">
+              <img src="assets/Pedrinho.png" alt="Pedrinho">
+            </div>
+            <div class="intro-text">
+              <h2 class="intro-title">Quiz das pedras</h2>
+              <p class="intro-description">
+                Oi! Eu sou o Pedrindo, o mascote oficial da nossa aventura turística por Queimadas-PB!
+                Prepare-se, porque eu vou te levar para descobrir curiosidades incríveis, histórias fascinantes e os pontos mais especiais da nossa querida cidade.
+                Aqui no nosso guia turistico,você vai explorar Queimadas de um jeito moderno, leve e divertido! E para começar essa jornada, que tal testar o quanto você já sabe sobre a cidade?
+              </p>
+              <p class="intro-description">
+                O jogo funciona assim: você terá 10 perguntas, cada uma valendo 10 pontos,
+                Mostre seu conhecimento, divirta-se e descubra coisas novas pelo caminho!
+                Quando estiver pronto para começar essa aventura comigo, é só clicar no botão “Jogar”! Vamos lá? 😄🔥
+              </p>
+            </div>
+          </div>
+          <button class="intro-button" onclick="comecarQuiz()">Jogar</button>
+        </div>
+        <div class="game">
+          <h1>Quiz das pedras</h1>
+          <div class="quiz">
+            <h2 id="questao">A pergunta vai aqui</h2>
+            <div id="resposta-buttons">
+              <button class="btn">Resposta 1</button>
+              <button class="btn">Resposta 2</button>
+              <button class="btn">Resposta 3</button>
+              <button class="btn">Resposta 4</button>
+            </div>
+            <h2 id="resultado-questao"> o resultado da questão vai aqui</h2>
+            <h2 id="gabarito">O gabarito vai aqui</h2>
+            <button id="proximo-btn">Próxima</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <main-footer></main-footer>
+  </body>
+</html>
