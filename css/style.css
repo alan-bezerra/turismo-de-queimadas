@@ -957,3 +957,160 @@ body.modal-aberto {
     font-size: 0.875rem;
   }
 }
+
+/* Quiz Page Responsiveness */
+@media (max-width: 768px) {
+  .game-intro {
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+
+  .intro-content {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .intro-image {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .intro-title {
+    font-size: 28px;
+    padding: 8px 16px;
+  }
+
+  .intro-description {
+    font-size: 18px;
+    padding: 8px;
+    text-align: center;
+  }
+
+  .intro-button {
+    padding: 12px 32px;
+    font-size: 24px;
+    margin: 20px auto 0;
+  }
+
+  .intro-button::before {
+    font-size: 20px;
+  }
+
+  .game {
+    width: 95%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .game h1 {
+    font-size: 28px;
+    padding-bottom: 20px;
+  }
+
+  .quiz {
+    padding: 16px 0;
+  }
+
+  .quiz h2 {
+    font-size: 20px;
+  }
+
+  #resultado-questao {
+    font-size: 20px;
+  }
+
+  #gabarito {
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 12px;
+    margin: 8px 0;
+    font-size: 16px;
+  }
+
+  #proximo-btn {
+    width: 120px;
+    padding: 8px;
+    font-size: 16px;
+    margin: 16px auto 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .game-intro {
+    margin: 15px auto;
+    padding: 0 16px;
+  }
+
+  .intro-content {
+    gap: 16px;
+  }
+
+  .intro-image {
+    width: 250px;
+  }
+
+  .intro-title {
+    font-size: 24px;
+    padding: 6px 12px;
+  }
+
+  .intro-description {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 6px;
+  }
+
+  .intro-button {
+    padding: 10px 28px;
+    font-size: 20px;
+    margin: 16px auto 0;
+  }
+
+  .intro-button::before {
+    font-size: 18px;
+  }
+
+  .game {
+    width: 98%;
+    margin: 15px auto;
+    padding: 16px;
+  }
+
+  .game h1 {
+    font-size: 24px;
+    padding-bottom: 16px;
+  }
+
+  .quiz {
+    padding: 12px 0;
+  }
+
+  .quiz h2 {
+    font-size: 18px;
+  }
+
+  #resultado-questao {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  #gabarito {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 10px;
+    margin: 6px 0;
+    font-size: 14px;
+  }
+
+  #proximo-btn {
+    width: 100px;
+    padding: 6px;
+    font-size: 14px;
+    margin: 12px auto 0;
+  }
+}
