@@ -777,6 +777,93 @@ body.modal-aberto {
   border-bottom: none;
 }
 
+/* Button Component Responsiveness */
+@media (max-width: 768px) {
+  .app-button span {
+    padding: 14px 24px;
+  }
+  
+  .app-button.primary span,
+  .app-button.secondary span {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-button span {
+    padding: 12px 20px;
+  }
+  
+  .app-button.primary span,
+  .app-button.secondary span {
+    font-size: 1.125rem;
+  }
+}
+
+/* Hero Section Responsiveness */
+@media (max-width: 1024px) {
+  .hero__heading {
+    font-size: 3rem;
+  }
+  
+  .hero__heading-wrapper span {
+    font-size: 1.375rem;
+  }
+  
+  .home__hero-container {
+    padding-top: calc(var(--header-height) + 80px + 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__heading {
+    font-size: 2.5rem;
+  }
+  
+  .hero__heading-wrapper span {
+    font-size: 1.25rem;
+  }
+  
+  .home__hero-container {
+    padding-top: calc(var(--header-height) + 60px + 20px);
+    padding-bottom: 40px;
+  }
+  
+  .home__hero {
+    gap: 20px;
+  }
+  
+  .hero__heading-wrapper {
+    gap: 12px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__heading {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+  
+  .hero__heading-wrapper span {
+    font-size: 1.125rem;
+  }
+  
+  .home__hero-container {
+    padding-top: calc(var(--header-height) + 40px + 20px);
+    padding-bottom: 30px;
+  }
+  
+  .home__hero {
+    gap: 16px;
+  }
+  
+  .hero__heading-wrapper {
+    gap: 10px;
+    padding: 0 16px;
+  }
+}
+
 /* Header Responsiveness */
 @media (max-width: 768px) {
   .header {
@@ -836,7 +923,8 @@ body.modal-aberto {
   .footer__content {
     flex-direction: column;
     gap: 32px;
-    /* padding: 64px 54px; */
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   .footer__social {
@@ -861,12 +949,6 @@ body.modal-aberto {
 }
 
 @media (max-width: 480px) {
-  .footer__content {
-    padding-left: 32px;
-    padding-right: 32px;
-    /* padding: 48px 32px 54px; */
-  }
-
   .footer__links h5 {
     font-size: 1rem;
   }
