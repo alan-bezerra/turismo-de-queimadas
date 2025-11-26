@@ -6,15 +6,60 @@ class MainHeader extends HTMLElement {
     <a href="/" class="header__logo">
       <img src="../assets/logo_queimadas_prefeitura.png" width="176" height="54" alt="Logo Prefeitura de Queimadas, Paraíba">
     </a>
+    
     <nav class="header__nav">
       <a href="o-que-fazer.html" class="link">O que fazer</a>
       <a href="restaurantes-e-pousadas.html" class="link">Restaurantes e Pousadas</a>
       <a href="quiz.html" class="link">Quiz das Pedras</a>
       <a href="#" download class="link">Baixar mapa</a>
     </nav>
+    
+    <button class="header__mobile-toggle" aria-label="Abrir menu de navegação">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+  </div>
+  
+  <div class="header__mobile-menu">
+    <nav class="header__mobile-nav">
+      <a href="o-que-fazer.html" class="mobile-link">O que fazer</a>
+      <a href="restaurantes-e-pousadas.html" class="mobile-link">Restaurantes e Pousadas</a>
+      <a href="quiz.html" class="mobile-link">Quiz das Pedras</a>
+      <a href="#" download class="mobile-link">Baixar mapa</a>
+    </nav>
   </div>
 </header>
 `
+    
+    // Add event listener for mobile menu toggle
+    const mobileToggle = this.querySelector('.header__mobile-toggle');
+    const mobileMenu = this.querySelector('.header__mobile-menu');
+    const header = this.querySelector('.header');
+    
+    mobileToggle.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.contains('open');
+      
+      if (isOpen) {
+        mobileMenu.classList.remove('open');
+        mobileToggle.classList.remove('open');
+        header.classList.remove('menu-open');
+      } else {
+        mobileMenu.classList.add('open');
+        mobileToggle.classList.add('open');
+        header.classList.add('menu-open');
+      }
+    });
+    
+    // Close mobile menu when clicking on links
+    const mobileLinks = this.querySelectorAll('.mobile-link');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        mobileToggle.classList.remove('open');
+        header.classList.remove('menu-open');
+      });
+    });
   }
 }
 
